@@ -4,7 +4,7 @@ Note that this repository includes the trained model and test scripts, which use
 
 ## Preparation
 1. Datasets can be downloaded [Here](https://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip).  Put it in the `data` dir.
-2. Download our pretrained models [Here](https://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip). Put it in the `result` dir.
+2. Download our pretrained models from google drive [Here](https://drive.google.com/drive/folders/1h_hX114jLEa2ah5k1_Yp1nPoclinuRCw?usp=sharing). Put it in the `result` dir.
 
 ## Test
 To test the results for GZSL or CZSL

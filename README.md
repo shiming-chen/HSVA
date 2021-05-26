@@ -14,4 +14,4 @@ CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB  --generalized True
 `--gdataset` test dataset, i.e., CUB, SUN, AWA1, AWA2.
 
 `--generalized` test for GZSL or CZSL.
-
+ 

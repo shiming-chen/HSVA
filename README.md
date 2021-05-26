@@ -7,7 +7,7 @@ Note that this repository includes the trained model and test scripts, which use
 2. Download our pretrained models from google drive [Here](https://drive.google.com/drive/folders/1h_hX114jLEa2ah5k1_Yp1nPoclinuRCw?usp=sharing), including CUB, SUN, AWA1 and AWA2 models. Put it in the `result` dir.
 
 ## Test
-To test the results for GZSL or CZSL
+To test the results for GZSL or CZSL, for example:
 ```
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB  --generalized True
 ```

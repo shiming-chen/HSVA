@@ -9,19 +9,22 @@ Note that this repository includes the trained model and test scripts, which is 
 ## Test
 To test the results for GZSL or CZSL, for example:
 ```
-CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB  --generalized True
+CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB --latent_size 64 --generalized True
+CUDA_VISIBLE_DEVICES="2" python test.py --dataset SUN --latent_size 256 --generalized True
+CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA1 --latent_size 64 --generalized True
+CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA2 --latent_size 64 --generalized True
 ```
 `--gdataset` test dataset, i.e., CUB, SUN, AWA1, and AWA2.
 
 `--generalized` test for GZSL or CZSL.
  
 ## Results
-Results of our released model using various evaluation protocols on four datasets. Since we use the one pre-trained model for evaluating all protocol (e.g., top-1 accuracy on seen classes (S), top-1 accuracy on unseen classes (U), harmonic mearn (H), and top-1 accuracy on unseen classes for CZSL (acc)) using various classifiers (e.g., **softmax/1-NN/ 5-NN**), the results may slightly larger/smaller than the results reported in our paper.
+Results of our released model using various evaluation protocols on four datasets. Since we use the one pre-trained model for evaluating conventional ZSL (CZSL) and generalized ZSL (GZSL), the results may slightly larger/smaller than the results reported in our paper.
 
 |Datasets | U | S| H| acc |
-| ----- | ---------- | ---------- | ---------- | ---- |
-| AWA1 | 61.1/69.4/69.9 |	75.2/90.2/94.0 |	67.4/78.5/80.2 | 67.7 |
-| AWA2 | 57.8/66.2/66.2	| 79.3/93.4/96.6	| 66.9/77.5/78.5 |  --  |
-| CUB  | 51.9/66.2/64.9	| 59.5/74.8/65.5 |	55.5/70.2/65.2 | 60.8 |
-| SUN  | 49.3/68.9/66.3	| 37.1/42.2/36.4	| 42.3/52.4/47.0 | 63.8 |
+| ----- | ----- | ----- | ----- | ----- |
+| AWA1 | 61.1 |	75.2 |	67.4 | 67.7 |
+| AWA2 | 57.8	| 79.3	| 66.9 |  --  |
+| CUB  | 51.9	| 59.5 |	55.5 | 60.8 |
+| SUN  | 49.3	| 37.1	| 42.3 | 63.8 |
 

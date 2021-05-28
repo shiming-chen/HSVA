@@ -20,12 +20,12 @@ CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA2 --latent_size 64 --genera
 `--generalized` test for GZSL or CZSL.
  
 ## Results
-Results of our released model using various evaluation protocols on four datasets. Since we use the one pre-trained model for evaluating conventional ZSL (CZSL) and generalized ZSL (GZSL), the results may slightly larger/smaller than the results reported in our paper.
+Results of our released model using various evaluation protocols on four datasets, both in conventional ZSL (CZSL) and generalized ZSL (GZSL) setting.
 
 |Datasets | U | S| H| acc |
 | ----- | ----- | ----- | ----- | ----- |
-| AWA1 | 61.1 |	75.2 |	67.4 | 67.7 |
+| AWA1 | 61.1 |	75.2 |	67.4 | 70.6 |
 | AWA2 | 57.8	| 79.3	| 66.9 |  --  |
-| CUB  | 51.9	| 59.5 |	55.5 | 60.8 |
+| CUB  | 51.9	| 59.5 |	55.5 | 62.8 |
 | SUN  | 48.6	| 39.0	| 43.3 | 63.8 |
 

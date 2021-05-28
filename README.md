@@ -8,7 +8,7 @@ Note that this repository includes the trained model and test scripts, which is 
 2. Download our pretrained models from google drive [Here](https://drive.google.com/drive/folders/1h_hX114jLEa2ah5k1_Yp1nPoclinuRCw?usp=sharing), including CUB, SUN, AWA1 and AWA2 models. Put it in the `result` dir. Note that we just provide one pre-trained model for every dataset.
 
 ## Test
-To test the results for GZSL or CZSL, run the commands in the following:
+To test the results for GZSL or CZSL, please run the commands in the following:
 ```
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB --latent_size 64 --generalized True
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset SUN --latent_size 128 --generalized True
@@ -17,7 +17,7 @@ CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA2 --latent_size 64 --genera
 ```
 `--gdataset` test dataset, i.e., CUB, SUN, AWA1, and AWA2.
 
-`--generalized` test for GZSL or CZSL.
+`--generalized` test for GZSL (**True**) or CZSL (**False**).
  
 ## Results
 Results of our released model using various evaluation protocols on four datasets, both in conventional ZSL (CZSL) and generalized ZSL (GZSL) setting.

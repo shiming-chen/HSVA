@@ -11,7 +11,7 @@ Note that this repository includes the trained model and test scripts, which is 
 To test the results for GZSL or CZSL, run the commands in the following:
 ```
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset CUB --latent_size 64 --generalized True
-CUDA_VISIBLE_DEVICES="2" python test.py --dataset SUN --latent_size 256 --generalized True
+CUDA_VISIBLE_DEVICES="2" python test.py --dataset SUN --latent_size 128 --generalized True
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA1 --latent_size 64 --generalized True
 CUDA_VISIBLE_DEVICES="2" python test.py --dataset AWA2 --latent_size 64 --generalized True
 ```

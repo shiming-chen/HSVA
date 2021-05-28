@@ -26,5 +26,5 @@ Results of our released model using various evaluation protocols on four dataset
 | AWA1 | 61.1 |	75.2 |	67.4 | 67.7 |
 | AWA2 | 57.8	| 79.3	| 66.9 |  --  |
 | CUB  | 51.9	| 59.5 |	55.5 | 60.8 |
-| SUN  | 49.3	| 37.1	| 42.3 | 63.8 |
+| SUN  | 48.6	| 39.0	| 43.3 | 63.8 |
 

@@ -75,8 +75,8 @@ hyperparameters = {
 # as determined on the validation spit
 
 cls_train_steps = [
-      {'dataset': 'SUN',  'latent_size': 256, 'generalized': True, 'cls_train_steps': 40},
-      {'dataset': 'SUN',  'latent_size': 256, 'generalized': False, 'cls_train_steps': 30},
+      {'dataset': 'SUN',  'latent_size': 128, 'generalized': True, 'cls_train_steps': 40},
+      {'dataset': 'SUN',  'latent_size': 128, 'generalized': False, 'cls_train_steps': 30},
       {'dataset': 'AWA1', 'latent_size': 64, 'generalized': True, 'cls_train_steps': 33},
       {'dataset': 'AWA1', 'latent_size': 64, 'generalized': False, 'cls_train_steps': 25},
       {'dataset': 'CUB',  'latent_size': 64, 'generalized': True, 'cls_train_steps': 23},
@@ -110,8 +110,8 @@ if hyperparameters['generalized']:
                                                     'AWA2': (200, 0, 200, 200), 'FLO': (200, 0, 200, 200)}
 else:
     if hyperparameters['num_shots']==0:
-        hyperparameters['samples_per_class'] = {'CUB': (0, 0, 200, 0), 'SUN': (0, 0, 200, 0),
-                                                    'APY': (0, 0, 200, 0), 'AWA1': (0, 0, 200, 0),
+        hyperparameters['samples_per_class'] = {'CUB': (0, 0, 400, 0), 'SUN': (0, 0, 200, 0),
+                                                    'APY': (0, 0, 200, 0), 'AWA1': (0, 0, 800, 0),
                                                     'AWA2': (0, 0, 200, 0), 'FLO': (0, 0, 200, 0)}
     else:
         hyperparameters['samples_per_class'] = {'CUB': (0, 0, 200, 200), 'SUN': (0, 0, 200, 200),

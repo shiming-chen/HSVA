@@ -4,6 +4,9 @@ Note that this repository includes the trained model and test scripts, which is 
 
 <center class="half"><img src="https://github.com/anonymou-ssubmition/HSVA-NeurIPS-21/blob/main/figs/motivation.png" width="700" height="350" alt=""/></center>
 
+
+## <font color=#33ff00> t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)</font>
+
 ## Preparation
 1. Datasets can be downloaded [Here](https://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip).  Put it in the `data` dir.
 2. Download our pretrained models from google drive [Here](https://drive.google.com/drive/folders/1h_hX114jLEa2ah5k1_Yp1nPoclinuRCw?usp=sharing), including CUB, SUN, AWA1 and AWA2 models. Put it in the `result` dir. Note that we just provide one pre-trained model for every dataset.

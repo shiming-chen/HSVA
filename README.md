@@ -2,7 +2,7 @@
 This is the implementation of “**HSVA: Hierarchical Semantic-Visual Adaptation for Zero-Shot Learning**” in Pytorch. The work is anonymously submitted to NeurIPS'21.
 Note that this repository includes the trained model and test scripts, which is used for testing and checking our results repoted in our paper. <b style='color:red'>Once our paper is accepted, we will release all codes of this work</b>.<br/>
 
-<center class="half"><img src="./figs/motivation.png" width="700" height="350" alt=""/></center>
+<center class="half"><img src="./figs/motivation-new.png" width="700" height="350" alt=""/></center>
 
 
 ## t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)

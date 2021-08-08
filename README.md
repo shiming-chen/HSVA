@@ -5,8 +5,10 @@ Note that this repository includes the trained model and test scripts, which is 
 <center class="half"><img src="./figs/motivation.png" width="700" height="350" alt=""/></center>
 
 
-## <font color=#008000> t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)</font>
-<center class="half"><img src="./figs/t-sne.png" width="700" height="300" alt=""/></center>
+## t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)
+For clearly check these qualitative results, please download these original figures at `/figs`.
+<center class="half"><img src="./figs/CUB.png" width="700" height="500" alt=""/></center>
+<center class="half"><img src="./figs/AWA1.png" width="700" height="500" alt=""/></center>
 
 ## Preparation
 1. Datasets can be downloaded [Here](https://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip).  Put it in the `data` dir.

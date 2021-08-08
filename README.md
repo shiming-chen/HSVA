@@ -6,7 +6,7 @@ Note that this repository includes the trained model and test scripts, which is 
 
 
 ## t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)
-<b>For more clearly checking these qualitative results, please download these original figures at `/figs`.</b>
+<b>To view these qualitative results clearly, please download these original figures from [Here](https://github.com/anonymou-ssubmition/HSVA-NeurIPS-21/tree/main/figs).</b>
 <center class="half"><img src="./figs/CUB.png" width="700" height="500" alt=""/></center>
 <center class="half"><img src="./figs/AWA1.png" width="700" height="500" alt=""/></center>
 

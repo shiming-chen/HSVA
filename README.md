@@ -5,10 +5,10 @@ Note that this repository includes the trained model and test scripts, which is 
 <center class="half"><img src="./figs/motivation-new.png" width="700" height="350" alt=""/></center>
 
 
-## t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)
+<!--## t-SNE Visualization for HSVA w/o SA or DA (Used for Rebuttal)
 <b>To view these qualitative results clearly, please download these original figures from [Here](https://github.com/anonymou-ssubmition/HSVA-NeurIPS-21/tree/main/figs).</b>
 <center class="half"><img src="./figs/CUB.png" width="700" height="500" alt=""/></center>
-<center class="half"><img src="./figs/AWA1.png" width="700" height="500" alt=""/></center>
+<center class="half"><img src="./figs/AWA1.png" width="700" height="500" alt=""/></center>-->
 
 ## Preparation
 1. Datasets can be downloaded [Here](https://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip).  Put it in the `data` dir.
@@ -36,3 +36,18 @@ Results of our released model using various evaluation protocols on four dataset
 | CUB  | 51.9	| 59.5 |	55.5 | 62.8 |
 | SUN  | 48.6	| 39.0	| 43.3 | 63.8 |
 
+## Citation
+If this work is helpful for you, please cite our paper.
+
+```
+@inproceedings{Chen2021HSVA,  
+  title={HSVA: Hierarchical Semantic-Visual Adaptation for Zero-Shot Learning},    
+  author={Chen, Shiming and Xie, Guo-Sen and Peng, Qinmu and Liu, Yang and Sun, Baigui and Li, Hao and You, Xinge and Shao,  Ling},    
+  booktitle={35th Conference on Neural Information Processing Systems (NeurIPS)}, 
+  year={2021}    
+}
+```
+## Ackowledgement
+We thank the following repos providing helpful components in our work.
+1. [CADA-VAE](https://github.com/edgarschnfld/CADA-VAE-PyTorch)
+2. [MCD-DA](https://github.com/mil-tokyo/MCD_DA)

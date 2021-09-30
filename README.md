@@ -1,5 +1,5 @@
 # HSVA-NeurIPS-21
-This is the implementation of “**HSVA: Hierarchical Semantic-Visual Adaptation for Zero-Shot Learning**” in Pytorch.<br/>
+This is the implementation of “**HSVA: Hierarchical Semantic-Visual Adaptation for Zero-Shot Learning**” in Pytorch. The paper will appear in NeurIPS 2021.<br/>
 
 <center class="half"><img src="./figs/motivation-new.png" width="700" height="350" alt=""/></center>
 

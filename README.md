@@ -14,10 +14,16 @@ This is the implementation of “**HSVA: Hierarchical Semantic-Visual Adaptation
 2. Download our pretrained models from google drive [Here](https://drive.google.com/drive/folders/1h_hX114jLEa2ah5k1_Yp1nPoclinuRCw?usp=sharing), including CUB, SUN, AWA1 and AWA2 models. Put it in the `result` dir. Note that we just provide one pre-trained model for every dataset.
 
 ## Training
+To Train the HSVA in the GZSL or CZSL setting, please run the commands in the following:
+```
 CUDA_VISIBLE_DEVICES="2" python single_experiment.py --dataset CUB --latent_size 64 --generalized True
 CUDA_VISIBLE_DEVICES="2" python single_experiment.py --dataset SUN --latent_size 128 --generalized True
 CUDA_VISIBLE_DEVICES="2" python single_experiment.py --dataset AWA1 --latent_size 64 --generalized True
 CUDA_VISIBLE_DEVICES="2" python single_experiment.py --dataset AWA2 --latent_size 64 --generalized True
+```
+`--gdataset` test dataset, i.e., CUB, SUN, AWA1, and AWA2.
+
+`--generalized` test for GZSL (**True**) or CZSL (**False**).
 
 ## Testing
 To test the results for GZSL or CZSL, please run the commands in the following:

@@ -95,7 +95,7 @@ class Model(nn.Module):
         self.encoder = {}
         for datatype, dim in zip(self.all_data_sources,feature_dimensions):
 
-            self.encoder[datatype] = models.encoder_template_v5(dim,self.coarse_latent_size,self.device)
+            self.encoder[datatype] = models.encoder_template(dim,self.coarse_latent_size,self.device)
 
             print(str(datatype) + ' ' + str(dim))
 
@@ -110,7 +110,7 @@ class Model(nn.Module):
         
         seen_class= (self.num_classes-self.num_unseen_classes)
         cls_dim = self.coarse_latent_size + self.dataset.aux_data.size(1)
-        self.encoder_z = models.encoder_z_v5(self.coarse_latent_size,self.latent_size, self.device)
+        self.encoder_z = models.encoder_z(self.coarse_latent_size,self.latent_size, self.device)
         self.decoder_z = models.decoder_z(self.latent_size, 512,self.device)
         
         self.domain_classifier = models.domain_classifier(self.latent_size, self.device)
@@ -727,9 +727,6 @@ class Model(nn.Module):
                     if best_H<H:# and best_unseen< unseen:
                         best_gzsl_epoch= epoch
                         best_unseen, best_seen, best_H= unseen, seen, H
-                        # torch.save({'encoder_v': self.encoder['resnet_features'].state_dict()}, os.path.join(self.result_root, self.DATASET, 'checkpoint_encv.pth.tar'))
-                        # torch.save({'encoder_a': self.encoder[self.auxiliary_data_source].state_dict()}, os.path.join(self.result_root, self.DATASET, 'checkpoint_enca.pth.tar'))
-                        # torch.save({'encoder_z': self.encoder_z.state_dict()}, os.path.join(self.result_root, self.DATASET, 'checkpoint_encz.pth.tar'))
                     print('[best_epoch=%.1f] best_unseen=%.3f, best_seen=%.3f, best_h=%.3f' % (
                     best_gzsl_epoch, best_unseen, best_seen, best_H))
                     
